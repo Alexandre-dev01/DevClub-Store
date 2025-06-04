@@ -102,9 +102,15 @@ header nav ul li:hover::after {
   justify-content: center;
   align-items: center;
   opacity: 0;
+
+  /*Animacao*/
+  transform: translateX(100vw);
+  transition: transform 0.9s ease-in-out, opacity 0.9s ease-in-out;
 }
+
 .active {
   opacity: 1;
+  transform: translateX(0);
 }
 
 .product-img {
@@ -121,6 +127,17 @@ header nav ul li:hover::after {
   max-width: 80%;
   max-height: 60%;
   filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
+
+  /*Animacao*/
+  transform: translateX(200px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition-delay: 0.8s;
+}
+
+.active .product-img img {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .content {
@@ -147,6 +164,17 @@ header nav ul li:hover::after {
   font-family: "Orbitron", sans-serif;
   line-height: 1.1;
   margin-bottom: 20px;
+
+  /*Animacao*/
+  transform: translateX(250px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition-delay: 0.5s;
+}
+
+.active .product-name {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .description {
@@ -155,6 +183,16 @@ header nav ul li:hover::after {
   line-height: 1.6;
   margin-bottom: 30px;
   max-width: 600px;
+  /*Animacao*/
+  transform: translateX(250px);
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition-delay: 0.5s;
+}
+
+.active .description {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .btn {
@@ -166,7 +204,8 @@ header nav ul li:hover::after {
   font-weight: 600;
   cursor: pointer;
   border: none;
-  transition: 2s ease;
+  margin-top: 3%;
+  transition-delay: 0.5s;
 }
 .btn:hover {
   background: linear-gradient(90deg, #032f41, #98cdff);
@@ -203,11 +242,11 @@ header nav ul li:hover::after {
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
   z-index: 5;
+  display: flex;
 }
 
 .number {
@@ -218,7 +257,58 @@ header nav ul li:hover::after {
 }
 
 .dots {
+  display: flex;
+  gap: 10px;
 }
 
 .dot {
+  width: 40px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+.dot.active {
+  background-color: #00f7ff;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+.tech-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 247, 255, 0.2);
+}
+.circle:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 10%;
+}
+.circle:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  top: 60%;
+  left: 80%;
+}
+
+.circle:nth-child(3) {
+  width: 150px;
+  height: 150px;
+  top: 70%;
+  left: 20%;
+}
+
+.circle:nth-child(4) {
+  width: 110px;
+  height: 100px;
+  top: 20%;
+  left: 70%;
 }
