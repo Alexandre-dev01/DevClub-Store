@@ -20,4 +20,4 @@ Uma interface moderna de loja fictícia desenvolvida com HTML, CSS e JavaScript.
 
 ## Acessar o projeto online
 
-[https://alexandre-dev01.github.io/devclub-store/](https://alexandre-dev01.github.io/devclub-store/)
+[https://alexandre-dev01.github.io/devclub-store/]( https://alexandre-dev01.github.io/DevClub-Store/)
