@@ -3,7 +3,7 @@ const nextButton = document.getElementById("next");
 const items = document.querySelectorAll(".item");
 const dots = document.querySelectorAll(".dot");
 const numberIndicators = document.querySelector(".number");
-const lis = document.querySelector("list");
+const lis = document.querySelector(".list");
 
 let active = 0;
 const total = items.length;

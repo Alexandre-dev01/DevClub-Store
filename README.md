@@ -2,6 +2,8 @@
 
 Uma interface moderna de loja fictícia desenvolvida com HTML, CSS e JavaScript. Este projeto simula uma vitrine interativa com transições animadas e design futurista.
 
+<img src="./img/ScreenShotWebSite.PNG" alt="Demonstração do Website" width="600">
+
 ## Funcionalidades
 
 - Navegação por produtos com botões "Anterior" e "Próximo"

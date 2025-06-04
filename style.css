@@ -66,6 +66,7 @@ header nav ul li:hover::after {
   width: 500px;
   height: 500px;
   border-radius: 50%;
+  z-index: 1;
   background: radial-gradient(
     circle,
     rgba(0, 247, 255, 0.2) 0%,
@@ -93,6 +94,7 @@ header nav ul li:hover::after {
   height: 100%;
   margin: 0 auto;
   position: relative;
+  z-index: 2;
 }
 
 .item {
@@ -205,16 +207,16 @@ header nav ul li:hover::after {
   cursor: pointer;
   border: none;
   margin-top: 3%;
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
 }
 .btn:hover {
   background: linear-gradient(90deg, #032f41, #98cdff);
-  border: 1px solid #a6c9a9;
-  color: #8a8a8a;
+  border: 1px solid #027fb9;
+  color: #000;
 }
 .arrows {
   position: absolute;
-  width: 90%;
+  width: 90%; 
   display: flex;
   justify-content: space-between;
   top: 50%;
@@ -234,7 +236,7 @@ header nav ul li:hover::after {
 
 .arrow-btn:hover {
   background-color: rgba(11, 96, 99, 0.747);
-  border: color #2c74b8;
+  border: 1px solid #2c74b8;
 }
 
 .indicators {
