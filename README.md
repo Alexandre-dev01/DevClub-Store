@@ -13,8 +13,6 @@ Uma interface moderna de loja fictícia desenvolvida com HTML, CSS e JavaScript.
 - Layout moderno com tipografia personalizada
 - Design responsivo pronto para telas desktop
 
-## Tecnologias utilizadas
-
 ## 🛠️ Tecnologias Utilizadas
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
